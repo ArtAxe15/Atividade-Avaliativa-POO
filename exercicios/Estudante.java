@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-package exercicios;
 
 public class Estudante {
     private ArrayList<Double> notas;
