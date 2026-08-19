@@ -1,7 +1,3 @@
-/* Versão anterior
-   Por algum motivo quando dei merge não substituiu os antigos :/
-   anyway aviso de que está é uma versão anterior */
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
