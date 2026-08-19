@@ -27,7 +27,7 @@ public class Estudante {
         return pesos;
     }
 
-    public int insereNotas(Double nota) {,
+    public int insereNotas(Double nota) {
         int confirmacao;
         if (notas.size() < 5) {
             notas.add(nota);
