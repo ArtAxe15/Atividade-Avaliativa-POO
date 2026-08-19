@@ -27,19 +27,25 @@ public class Estudante {
         return pesos;
     }
 
-    public void insereNotas(Double nota) {
+    public int insereNotas(Double nota) {,
+        int confirmacao;
         if (notas.size() < 5) {
             notas.add(nota);
+            return 0;
         } else {
             System.out.println("O estudante já possui 5 notas.");
+            return confirmacao = -1;
         }
     }
 
-    public void inserePesos(Integer peso){
+    public int inserePesos(Integer peso){
+        int confirmacao;
         if (pesos.size() < 5){
             pesos.add(peso);
+            return 0;
         } else {
             System.out.println("A grade já possui 5 pesos.");
+            return confirmacao = -1;
         }
     }
 
