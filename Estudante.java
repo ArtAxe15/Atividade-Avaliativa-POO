@@ -3,10 +3,12 @@ import java.util.ArrayList;
 public class Estudante {
     private ArrayList<Double> notas;
     private String nome;
+    private ArrayList<Integer> pesos;
 
     public Estudante (String nome){
         this.nome = nome;
         this.notas = new ArrayList<>();
+        this.pesos = new ArrayList<>();
     }
     
     public String getNome(){
@@ -21,13 +23,29 @@ public class Estudante {
         return notas;
     }
 
+    public ArrayList<Integer> getPesos(){
+        return pesos;
+    }
+
     public int insereNotas(Double nota) {
+        int confirmacao;
         if (notas.size() < 5) {
             notas.add(nota);
             return 0;
         } else {
             System.out.println("O estudante já possui 5 notas.");
-            return -1;
+            return confirmacao = -1;
+        }
+    }
+
+    public int inserePesos(Integer peso){
+        int confirmacao;
+        if (pesos.size() < 5){
+            pesos.add(peso);
+            return 0;
+        } else {
+            System.out.println("A grade já possui 5 pesos.");
+            return confirmacao = -1;
         }
     }
 
